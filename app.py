@@ -51,7 +51,9 @@ def download_file():
 def upload_form():
     return render_template('download.html')
 
-
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 @app.route('/createtable', methods=['POST'])
 def createtable():
@@ -63,5 +65,5 @@ def createtable():
     return '''table created'''
 
 if __name__ == '__main__':
-    # app.run(host= '0.0.0.0',debug=True)    
-    app.run(debug=True)
+    app.run(host= '0.0.0.0',debug=True)    
+    #app.run(debug=True)
