@@ -8,7 +8,7 @@ app.secret_key = 'sampletext'
 
 
 
-conn = sqlite3.connect('AllReadings.db', check_same_thread=False)
+conn = sqlite3.connect('Readings.db', check_same_thread=False)
 
 # Create table
 # cursor= conn.cursor()
