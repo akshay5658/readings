@@ -4,11 +4,11 @@ from datetime import datetime
 
 
 app = Flask(__name__)
-app.secret_key = '123456789'
+app.secret_key = 'sampletext'
 
 
 
-conn = sqlite3.connect('Readings.db', check_same_thread=False)
+conn = sqlite3.connect('AllReadings.db', check_same_thread=False)
 
 # Create table
 # cursor= conn.cursor()
